@@ -20,4 +20,15 @@
 
 .sidebar {
     display: grid;
+    gap: 5px;
+}
+
+.header {
+    display: grid;
+    gap: 5px;
+}
+
+.main-content {
+    display: grid;
+    gap: 5px;
 }
