@@ -14,6 +14,7 @@
 <body>
     <div class="container">
         
+        <!-- Sidebar -->
         <div class="sidebar">
             <div class="sidebarItem">
                 <img src="/icons/view-dashboard.svg" alt="">
@@ -57,32 +58,170 @@
             </div>
         </div>
         
+        
+        <!-- Header -->
         <div class="header">
             <div class="headerTop">
-
+                <div class="search">
+                    <div class="headerTopIcon">
+                        <img src="/icons/magnify.svg" alt="">
+                    </div>
+                    <input type="text" name="search" autocomplete="off">
+                </div>
+                <div class="account">
+                    <div class="headerTopIcon">
+                        <img src="/icons/bell-ring-outline.svg" alt="">
+                    </div>
+                    <div class="headerTopAvatar">
+                        <img src="" alt=""> 
+                    </div>
+                    <p class="headerTopName">Jacky Xu</p>
+                </div>
             </div>
-            
-            <div class="headerBottom">
 
+            <div class="headerBottom">
+                <div class="profileInfo">
+                    <div class="headerBottomAvatar">
+                        <img src="" alt="">
+                    </div>
+                    <p class="greeting">Hi there,</p>
+                    <p class="headerBottomName">Jacky Xu (@jaxzxu)</p>
+                </div>
+                <div class="headerButtons">
+                    <button class="btn">New</button>
+                    <button class="btn">Upload</button>
+                    <button class="btn">Share</button>
+                </div>
             </div>
         </div>
 
-        <div class="main-content">
-            <div class="main-content-item">
-                1
+        <!-- Main Content -->
+        <main class="content">
+            <div class="projects">
+                <h3>Your Projects</h3>
+                
+                <!-- All project cards -->
+                <div class="cards">
+                    <!-- Each individual card -->
+                    <div class="card">
+                        <h5 class="card-title">Super Cool Project</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum minus nemo quisquam et quis repellendus eius sequi, praesentium ex quibusdam consequatur? Odio ipsa laudantium iure vel!</p>
+                        <div class="icons">
+                            <img src="/icons/star-plus-outline.svg" alt="">
+                            <img src="/icons/eye-plus-outline.svg" alt="">
+                            <img src="/icons/source-fork.svg" alt="">
+                        </div>
+                    </div>
+                    <!-- Each individual card -->
+                    <div class="card">
+                        <h5 class="card-title">Less Cool Project</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum minus nemo quisquam et quis repellendus eius sequi, praesentium ex quibusdam consequatur? Odio ipsa laudantium iure vel!</p>
+                        <div class="icons">
+                            <img src="/icons/star-plus-outline.svg" alt="">
+                            <img src="/icons/eye-plus-outline.svg" alt="">
+                            <img src="/icons/source-fork.svg" alt="">
+                        </div>
+                    </div>
+                    <!-- Each individual card -->
+                    <div class="card">
+                        <h5 class="card-title">Impossible App</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum minus nemo quisquam et quis repellendus eius sequi, praesentium ex quibusdam consequatur? Odio ipsa laudantium iure vel!</p>
+                        <div class="icons">
+                            <img src="/icons/star-plus-outline.svg" alt="">
+                            <img src="/icons/eye-plus-outline.svg" alt="">
+                            <img src="/icons/source-fork.svg" alt="">
+                        </div>
+                    </div>
+                    <!-- Each individual card -->
+                    <div class="card">
+                        <h5 class="card-title">Easy Peasy App</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum minus nemo quisquam et quis repellendus eius sequi, praesentium ex quibusdam consequatur? Odio ipsa laudantium iure vel!</p>
+                        <div class="icons">
+                            <img src="/icons/star-plus-outline.svg" alt="">
+                            <img src="/icons/eye-plus-outline.svg" alt="">
+                            <img src="/icons/source-fork.svg" alt="">
+                        </div>
+                    </div>
+                    <!-- Each individual card -->
+                    <div class="card">
+                        <h5 class="card-title">Ad Blocker</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum minus nemo quisquam et quis repellendus eius sequi, praesentium ex quibusdam consequatur? Odio ipsa laudantium iure vel!</p>
+                        <div class="icons">
+                            <img src="/icons/star-plus-outline.svg" alt="">
+                            <img src="/icons/eye-plus-outline.svg" alt="">
+                            <img src="/icons/source-fork.svg" alt="">
+                        </div>
+                    </div>
+                    <!-- Each individual card -->
+                    <div class="card">
+                        <h5 class="card-title">Money Maker</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum minus nemo quisquam et quis repellendus eius sequi, praesentium ex quibusdam consequatur? Odio ipsa laudantium iure vel!</p>
+                        <div class="icons">
+                            <img src="/icons/star-plus-outline.svg" alt="">
+                            <img src="/icons/eye-plus-outline.svg" alt="">
+                            <img src="/icons/source-fork.svg" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="main-content-item">
-                2
+            <div class="side-content">
+                <div class="announcements">
+                    <h3>Announcements</h3>
+                    <ul class="card">
+                    <!-- List of announcements -->
+                        <li class="announcement">
+                            <h5 class="card-title">Site Maintenance</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eius accusamus cum praesentium. Nostrum quo, consectetur aliquam aliquid ullam doloribus quas amet sunt tempore laudantium facere ea in id? Accusantium?</p>
+                        </li>
+                        <li class="announcement">
+                            <h5 class="card-title">Community Share Day</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eius accusamus cum praesentium. Nostrum quo, consectetur aliquam aliquid ullam doloribus quas amet sunt tempore laudantium facere ea in id? Accusantium?</p>
+                        </li>
+                        <li class="announcement">
+                            <h5 class="card-title">Updated Privacy Policy</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eius accusamus cum praesentium. Nostrum quo, consectetur aliquam aliquid ullam doloribus quas amet sunt tempore laudantium facere ea in id? Accusantium?</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="trending">
+                    <h3>Trending</h3>
+                    <ul class="card">
+                        <!-- List of trending people -->
+                        <li class="trending-item">
+                            <img src="" alt="">
+                            <div class="account">
+                                <h3 class="username">@tengan</h3>
+                                <p class="name-card-text">World Peace Builder</p>
+                            </div>
+                        </li>                    
+                        <li class="trending-item">
+                            <img src="" alt="">
+                            <div class="account">
+                                <h3 class="username">@jaxzxu</h3>
+                                <p class="name-card-text">Dev in Training</p>
+                            </div>
+                        </li>                    
+                        <li class="trending-item">
+                            <img src="" alt="">
+                            <div class="account">
+                                <h3 class="username">@morgan</h3>
+                                <p class="name-card-text">Food Enjoyer</p>
+                            </div>
+                        </li>                    
+                        <li class="trending-item">
+                            <img src="" alt="">
+                            <div class="account">
+                                <h3 class="username">@alex</h3>
+                                <p class="name-card-text">Cat Dad</p>
+                            </div>
+                        </li>                    
+                    </ul>
+                </div>
             </div>
-            <div class="main-content-item">
-                3
-            </div>
-            <div class="main-content-item"></div>
-            <div class="main-content-item"></div>
-            <div class="main-content-item"></div>
-            <div class="main-content-item"></div>
-            <div class="main-content-item"></div> 
-        </div> 
+        </main>
+
+
     </div>
 </body>
 </html>
