@@ -93,30 +93,109 @@
 .header {
     display: grid;
     grid-area: header;
-    background-color: bisque;
     transition: var(--transition-noSideBar);
+    padding: 1.5rem 3rem;
+    border-bottom: 1px solid lightsteelblue;
+}
+
+.headerTop {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    margin-bottom: 2.5rem;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    width: 100%;
+}
+
+.search > input {
+    display: inline-block;
+    border: 0;
+    background-color: #EEEEEE;
+    padding: 0.5rem 2rem;
+    outline-color: #064663;
+    margin-left: 1.25rem;
+    border-radius: 5px;
+    width: min(80%, 500px);
+    margin-right: 20px;
+}
+
+.header .account {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+.avatar {
+    background: url(https://github.com/jaxzxu.png) center center / cover no-repeat;
+    border-radius: 50%;
+}
+
+.account .avatar {
+    margin: 0 1rem 0 2.5rem;
+    height: 40px;
+    width: 40px;
+}
+
+
+.headerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.profileInfo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profileInfo .avatar {
+    height: 70px;
+    width: 70px;
+}
+
+.greeting {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.headerBottomName {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.headerButtons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+
+.btn {
+    background-color: #064663;
+    color: white;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 0.5rem 1.9rem;
+    font-size: 16px;
+    border: solid black;
+    cursor: pointer;
 }
 
 .content {
+    background-color: bisque;
     display: grid;
     grid-area: content;
     transition: var(--transition-noSideBar);
 }
 
-.headerTop {
-    display: grid;
-    grid-auto-flow: column;
-    justify-items: center;
-}
-
-.search {
-    display: grid;
-    grid-auto-flow: column;
-    justify-items: center;
-}
-
-.account {
-    display: grid;
-    grid-auto-flow: column;
-    justify-items: center;
+img {
+    cursor: pointer;
 }
