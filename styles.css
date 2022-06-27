@@ -1,7 +1,7 @@
 :root {
     font-family: 'Noto Serif', serif;
     font-size: 16px;
-    --sidebar-width: clamp(200px, 22vw, 300px);
+    --sidebar-width: clamp(200px, 17vw, 300px);
     --transition-sidebar: width 0.2s ease-in;
     --transition-noSideBar: margin-left 0.2s ease-in; 
 }
@@ -16,6 +16,8 @@
     grid-template-columns: 5rem 1fr 1fr 1fr;
     grid-template-rows: 1fr 5fr;
 }
+
+/* SIDEBAR */
 
 .sidebar {
     grid-area: sidebar;
@@ -90,18 +92,21 @@
     padding-top: 60px;
 }
 
+/* HEADER */
+
 .header {
     display: grid;
     grid-area: header;
     transition: var(--transition-noSideBar);
     padding: 1.5rem 3rem;
     border-bottom: 1px solid lightsteelblue;
+    position: sticky;
 }
 
 .headerTop {
     display: grid;
     grid-template-columns: 1fr max-content;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .search {
@@ -189,11 +194,167 @@
     cursor: pointer;
 }
 
+/* MAIN CONTENT */
+
 .content {
-    background-color: bisque;
-    display: grid;
     grid-area: content;
     transition: var(--transition-noSideBar);
+    background-color: #EEEEEE;
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: min-content 1fr;
+    gap: 2rem;
+    grid-template-areas: 
+        "projects announcements"
+        "projects trending";
+    overflow: auto;
+}
+
+.content h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.projects .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 250px;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.projects .card {
+    border-left: solid 10px #064663;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 30vw;
+}
+
+.projects .card-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.projects .card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.projects .icons {
+    margin-top: auto;
+    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.announcements {
+    grid-area: announcements;
+    width: 30ch;
+    padding: .3rem 0;
+}
+
+.announcements .card {
+    padding: .5rem 1rem;
+}
+
+.announcements h5 {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+}
+
+.announcements p {
+    font-size: 0.8rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.announcement + .announcement {
+    border-top: #EEEEEE solid 1px;
+}
+
+.trending {
+    grid-area: trending;
+    margin-top: 1.8rem;
+}
+
+.trending .card {
+    padding: 1rem;
+}
+
+.trending-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.trending-item + .trending-item {
+    margin-top: 1.5rem;
+}
+
+.trending-item .account{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.trending-item .username {
+    font-weight: 500;
+    margin-bottom: .2rem;
+}
+
+.trending-item .avatar1 {
+    background: url(https://github.com/sebastianrosado.png) center center / cover no-repeat;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.trending-item .avatar2 {
+    background: url(https://github.com/jaxzxu.png) center center / cover no-repeat;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+
+}
+
+.trending-item .avatar3 {
+    background: url(https://github.com/lavaboy1738.png) center center / cover no-repeat;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+
+}
+
+.trending-item .avatar4 {
+    background: url(https://github.com/gwern.png) center center / cover no-repeat;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+
 }
 
 img {
